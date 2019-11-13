@@ -1,0 +1,24 @@
+{
+  "info": {
+    "_postman_id": "f9d84dd5-5e0e-4a38-bcee-580453df65a2",
+    "name": "Talk",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Delete user",
+      "request": {
+        "method": "PUT",
+        "header": [],
+        "url": {
+          "raw": "https://7h5623cyw0.execute-api.eu-west-2.amazonaws.com/Stage/api/delete-user/{{userId}}",
+          "protocol": "https",
+          "host": ["7h5623cyw0", "execute-api", "eu-west-2", "amazonaws", "com"],
+          "path": ["Stage", "api", "delete-user", "{{userId}}"]
+        }
+      },
+      "response": []
+    }
+  ],
+  "protocolProfileBehavior": {}
+}
