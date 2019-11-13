@@ -21,7 +21,7 @@ const handlerFunction = async (event, context, callback) => {
     await docClient.update(options).promise();
     const result = {
       statusCode: 200,
-      body: {},
+      body: JSON.stringify({}),
       headers: { 'content-type': 'application/json' }
     };
     callback(null, result);
