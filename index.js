@@ -12,7 +12,7 @@ const handlerFunction = async (event, context, callback) => {
       UpdateExpression: 'set #active = :active',
       ExpressionAttributeValues: {
         ':active': false,
-        ':unsuscribeTimestamp': '123456'
+        ':unsuscribeTimestamp': Date.now()
       },
       ExpressionAttributeNames: {
         '#active': 'active',
