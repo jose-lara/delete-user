@@ -9,7 +9,7 @@ const handlerFunction = async (event, context, callback) => {
     const options = {
       TableName: 'User',
       Key: { userId },
-      UpdateExpression: 'set #active = :active',
+      UpdateExpression: 'set #active = :active , #unsuscribeTimestamp = :unsuscribeTimestamp' ,
       ExpressionAttributeValues: {
         ':active': false,
         ':unsuscribeTimestamp': Date.now()
