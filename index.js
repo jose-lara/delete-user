@@ -11,10 +11,12 @@ const handlerFunction = async (event, context, callback) => {
       Key: { userId },
       UpdateExpression: 'set #active = :active',
       ExpressionAttributeValues: {
-        ':active': false
+        ':active': false,
+        ':unsuscribeTimestamp': '123456'
       },
       ExpressionAttributeNames: {
-        '#active': 'active'
+        '#active': 'active',
+        '#unsuscribeTimestamp' : 'unsuscribeTimestamp'
       },
       ReturnValues: 'UPDATED_NEW'
     };
